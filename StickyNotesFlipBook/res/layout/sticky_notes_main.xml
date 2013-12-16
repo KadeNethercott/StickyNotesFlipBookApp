@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="#F9F3A3"> 
+<LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 	<LinearLayout
+ 	    android:id="@+id/button_layout"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="50dp"
+ 	    android:layout_gravity="center"
+ 	    android:orientation="horizontal" >
+
+ 	      <Button 
+ 	        android:id="@+id/back_btn"
+ 	        android:layout_width="30dp"
+ 	        android:layout_height="match_parent"
+ 	        android:contentDescription="@string/leftarrow"
+ 	        style="@style/btnArrows"
+ 	        android:text="@string/leftarrow"/>
+ 	   <Button
+ 	       android:id="@+id/file_btn"
+ 	       android:layout_width="wrap_content"
+ 	       android:layout_height="match_parent"
+ 	       style="@style/btnStyleSeagull"
+ 	       android:text="@string/file"/>
+ 	   <Button
+ 	       android:id="@+id/edit_btn"
+ 	       android:layout_width="wrap_content"
+ 	       android:layout_height="match_parent"
+ 	       style="@style/btnStyleSeagull"
+ 	       android:text="@string/edit"/>
+ 	   
+ 	   <Button
+ 	       android:id="@+id/tools_btn"
+ 	       android:layout_width="wrap_content"
+ 	       android:layout_height="match_parent"
+ 	       style="@style/btnStyleSeagull"
+ 	       android:text="@string/tools"/>
+ 	   <Button
+ 	       android:id="@+id/color_btn"
+ 	       android:layout_width="wrap_content"
+ 	       android:layout_height="match_parent"
+ 	       style="@style/btnStyleSeagull"
+ 	       android:text="@string/color"/>
+
+ 	   <Button 
+ 	        android:id="@+id/next_btn"
+ 	        android:layout_width="30dp"
+ 	        android:layout_height="match_parent"
+ 	        android:contentDescription="@string/rightarrow"
+ 	        style="@style/btnArrows"
+ 	        android:text="@string/rightarrow"/>
+ 	</LinearLayout>
+ 	
+ 	<com.example.stickynotesflipbook.StickyNotesView
+ 	    
+ 	    android:id="@+id/drawing"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:layout_marginBottom="3dp"
+ 	    android:layout_marginLeft="5dp"
+ 	    android:layout_marginRight="5dp"
+ 	    android:layout_marginTop="3dp"
+ 	    android:background="#F9F3A3"/>
+ </LinearLayout>
+ 		<ImageButton 
+ 		    android:id="@+id/flip_btn"
+ 		    android:layout_width="wrap_content" 
+ 		    android:layout_height="wrap_content" 
+ 		    android:padding="0dip"
+ 		  	android:layout_margin="0dip"
+ 		  	android:background="@android:color/transparent"
+ 		    android:layout_gravity="right|bottom"
+ 		    android:contentDescription="@string/flipbtn"
+ 		    android:src="@drawable/flip_icon"/>
+ 
+</FrameLayout>
